@@ -189,8 +189,8 @@ a{
     border-right: 0; }
 
 .fas:hover{
-    color: #a8741a;
-}
+    color: #a8741a;}
+
 .search-form__submit {
     width: 75px;
     height: 45px;
@@ -292,14 +292,14 @@ a{
     border-right: 1px solid #323232;
     padding: 0 16px 0 27px; }
 
-
-
 .bg-light{
   background-color: #242424 !important;
 }
+
 .mainmenu__item{
   padding-left: 70px !important;
 }
+
 .mainmenu__link{
   color: #ffff !important;
   padding-right: 10px !important;
@@ -311,28 +311,58 @@ a{
 }
 
 
+.breadcrumb-area .breadcrumb li.current a, .breadcrumb-area .breadcrumb li a:hover{
+  color: #a8741a;
+  background-color:#0000;}
 
-.breadcrumb-area .breadcrumb li.current a, .breadcrumb-area .breadcrumb li a:hover, .tweet i, .tweet a, 
-.dropdown-item:hover, .corporate-2:hover i, .header-toolbar-icons li .bordered-icon:hover, .contact-info p, 
-.copyright-text a, .copyright-text a:hover, .recent-post-content h4 a:hover, .mainmenu__item.active > a, 
-.mainmenu__item.active > a:after, .mainmenu__item > a:hover, .mainmenu__item >
- a:hover:after, .mini-cart__ammount i, .homepage-slider .single-slider .slider-content h5, 
- .homepage-slider .single-slider .slider-content p strong, .static-slider .single-static-slide 
- .static-slide-text p, .account-form h4, .search-form__submit:hover, .product-rating i.theme-star, 
- .widget-product .product-rating i, .widget-product .product-price-wrapper > span, .ratings i.rated, 
- .product-modal .product-detail-list li a, .product-modal .product-price .sale-price, 
- .nav-top .slick-btn:hover i, .product-tab__link.nav-link:hover, .product-tab__link.nav-link.active, 
- .user-dashboard-tab__head .nav-link.active, .promo__name, .promo__link, .banner__notice, .banner__label, 
- .banner__name span, .accordion__link:hover, .blog__meta p a, .blog .read-more, .post-title a:hover, 
- .post .footer-meta a:hover, .cart-calculator-table td .price-ammount, 
- .order-table .table tr.order-total td span, .comment .reply, .error h1, .product-details-content 
- .ratings-wrap a:hover, .product-details-list li a, .product-details-price-wrapper > span,
-  .product-details-action-bottom a:hover, .product-details-slider .slick-btn:hover {
+.tweet i, .tweet a, .dropdown-item:hover{
+  color: #a8741a;
+  background-color:#0000;}
+
+
+.corporate-2:hover i{
+  color: #a8741a;
+  background-color:#0000;} 
+
+.header-toolbar-icons li .bordered-icon:hover, .contact-info p, 
+.copyright-text a, .copyright-text a:hover, .recent-post-content h4 a:hover{
+  color: #a8741a;
+  background-color:#0000;
+  }
+
+.mainmenu__item.active > a, .mainmenu__item.active > a:after, .mainmenu__item > a:hover, .mainmenu__item >
+a:hover:after, .mini-cart__ammount i, .homepage-slider .single-slider .slider-content h5, 
+.homepage-slider .single-slider .slider-content p strong, .static-slider .single-static-slide 
+.static-slide-text p, .account-form h4, .search-form__submit:hover{
+  color: #a8741a;
+  background-color:#0000;
+  } 
+
+
+.product-rating i.theme-star, .widget-product .product-rating i, .widget-product .product-price-wrapper > span,
+.ratings i.rated, .product-modal .product-detail-list li a, .product-modal .product-price .sale-price, 
+.nav-top .slick-btn:hover i, .product-tab__link.nav-link:hover{
+  color: #a8741a;
+  background-color:#0000;}
+
+
+.product-tab__link.nav-link.active,.user-dashboard-tab__head .nav-link.active, .promo__name, .promo__link,
+.banner__notice, .banner__label, .banner__name span, .accordion__link:hover{
+  color: #a8741a;
+  background-color:#0000;} 
+
+.blog__meta p a, .blog .read-more, .post-title a:hover{
+  color: #a8741a;
+  background-color:#0000;} 
+
+.post .footer-meta a:hover, .cart-calculator-table td .price-ammount, 
+.order-table .table tr.order-total td span, .comment .reply, .error h1, .product-details-content 
+.ratings-wrap a:hover, .product-details-list li a, .product-details-price-wrapper > span,
+.product-details-action-bottom a:hover, .product-details-slider .slick-btn:hover {
   color: #a8741a;
   background-color:#0000;  }
+
 /*all Header Area End*/
-
-
 
 /*main boday shop start*/
 .bg--2 {
@@ -367,14 +397,24 @@ a{
         font-size: 30px; }
 
 .breadcrumb-area .breadcrumb li.current a, .breadcrumb-area .breadcrumb li a:hover, .tweet i, .tweet a,
-.dropdown-item:hover, .corporate-2:hover i, .header-toolbar-icons li .bordered-icon:hover, .contact-info p,
-.copyright-text a, .copyright-text a:hover, .recent-post-content h4 a:hover, .mainmenu__item.active > a,
-.mainmenu__item.active > a:after, .mainmenu__item > a:hover, .mainmenu__item > a:hover:after,
-.mini-cart__ammount i, .homepage-slider .single-slider .slider-content h5, .homepage-slider
-.single-slider .slider-content p strong, .static-slider .single-static-slide .static-slide-text p,
-.account-form h4, .search-form__submit:hover, .product-rating i.theme-star, .widget-product .product-rating i,
-.widget-product .product-price-wrapper > span, .ratings i.rated, .product-modal .product-detail-list li a, 
-.product-modal .product-price .sale-price, .nav-top .slick-btn:hover i, .product-tab__link.nav-link:hover, 
+.dropdown-item:hover{color: #a8741a;
+  } 
+
+.corporate-2:hover i, .header-toolbar-icons li .bordered-icon:hover, .contact-info p,
+.copyright-text a, .copyright-text a:hover, .recent-post-content h4 a:hover{
+  color: #a8741a;} 
+
+.mainmenu__item.active > a, .mainmenu__item.active > a:after, .mainmenu__item > a:hover,
+.mainmenu__item > a:hover:after,.mini-cart__ammount i, .homepage-slider .single-slider .slider-content h5,
+.homepage-slider .single-slider .slider-content p strong, .static-slider .single-static-slide .static-slide-text p,
+.account-form h4, .search-form__submit:hover{
+  color: #a8741a;} 
+
+.product-rating i.theme-star, .widget-product .product-rating i,.widget-product .product-price-wrapper > span,
+.ratings i.rated, .product-modal .product-detail-list li a,.product-modal .product-price .sale-price, .nav-top .slick-btn:hover i{
+  color: #a8741a;}
+
+.product-tab__link.nav-link:hover, 
 .product-tab__link.nav-link.active, .user-dashboard-tab__head .nav-link.active, .promo__name, .promo__link, 
 .banner__notice, .banner__label, .banner__name span, .accordion__link:hover, .blog__meta p a, 
 .blog .read-more, .post-title a:hover, .post .footer-meta a:hover, .cart-calculator-table td .price-ammount, 
