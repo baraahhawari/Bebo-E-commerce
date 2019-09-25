@@ -109,19 +109,21 @@
                   </div>
               </div>
               <div class="col-lg-2 col-12 order-lg-2 text-center">
-                  <a href="karóra-index.html" class="logo-box">
+                  <a href="index.html" class="logo-box">
                       <img src="img/bebo.png" alt="logo">
                   </a>
               </div>
               <div class="col-lg-5 col-md-7 col-sm-6 order-lg-3 order-3">
                   <div class="header-toolbar">
-                          <form action="#" class="search-form">
-                              <input type="text" name="search" id="search" class="search-form__input" placeholder="Search">
-                              <button type="submit" class="search-form__submit">
-                                <i class="fas fa-search"></i>
-                              </button>
-                          </form>
-                      <ul class="header-toolbar-icons">
+                      <div class="search-form-wrapper search-hide">
+                        <form action="#" class="search-form">
+                            <input type="text" name="search" id="search" class="search-form__input" placeholder="Search entire store here..">
+                        </form>
+                      </div>
+                        <ul class="header-toolbar-icons">
+                                    <li class="search-box">
+                                        <a href="#" class="bordered-icon search-btn" aria-expanded="false"><i class="icon_search fas fa-search"></i></a>
+                                    </li>
                                     <li class="wishlist-icon">
                                         <a href="karóra-wishlist.html" class="bordered-icon"><i class="fa fa-heart"></i></a>
                                     </li>
@@ -148,7 +150,7 @@
     <div class="collapse navbar-collapse col-12 position-static text-center" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mainmenu">
       <li class="nav-item mainmenu__item">
-        <a class="nav-link mainmenu__link" href="karóra-index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link mainmenu__link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="mainmenu__item nav-item">
        <a href="karóra-shop.html" class="mainmenu__link nav-link">Shop</a></li>  
@@ -160,10 +162,10 @@
        <a href="" class="mainmenu__link nav-link">Pages</a></li> 
 
        <li class="mainmenu__item nav-item">
-       <a href="" class="mainmenu__link nav-link">About Us</a></li> 
+       <a href="karóra-about.html" class="mainmenu__link nav-link">About Us</a></li> 
 
        <li class="mainmenu__item nav-item">
-       <a href="" class="mainmenu__link nav-link">contact Us</a></li> 
+       <a href="karóra-contactUs.html" class="mainmenu__link nav-link">contact Us</a></li> 
     </ul>
   </div>
     </nav>
@@ -181,7 +183,7 @@
                     <div class="col-12 text-center">
                         <h1 class="page-title">Cart</h1>
                         <ul class="breadcrumb justify-content-center">
-                            <li><a href="karóra-index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li class="current"><a href="karóra-cart.html">Cart</a></li>
                         </ul>
                     </div>
@@ -190,15 +192,11 @@
         </div>
         <!-- Breadcumb area End -->
 
- 
-
-
  <!-- Main content wrapper start -->
-
         <div class="main-content-wrapper">
-            <div class="cart-area pt--40 pb--80 pt-md--30 pb-md--60">
+            <div class="cart-area">
                 <div class="container">
-                    <div class="cart-wrapper bg--2 mb--80 mb-md--60">
+                    <div class="cart-wrapper bg--2">
                         <div class="row">
                             <div class="col-12">
                                 <!-- Cart Area Start -->
@@ -219,7 +217,7 @@
                                                 <tr>
                                                     <td><a class="delete" href=""><i class="fa fa-times"></i></a></td>
                                                     <td>
-                                                        <a href="">
+                                                        <a href="karóra-product.html">
                                                             <img src="img/1-450x450.jpg" alt="product">
                                                         </a>
                                                     </td>
@@ -237,7 +235,7 @@
                                                 <tr>
                                                     <td><a class="delete" href=""><i class="fa fa-times"></i></a></td>
                                                     <td>
-                                                        <a href="">
+                                                        <a href="karóra-product.html">
                                                             <img src="img/1-1-450x450.jpg" alt="product">
                                                         </a>
                                                     </td>
@@ -259,27 +257,28 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="apply-coupon-wrapper">
-                                                <div class="form__group d-flex justify-content-between align-items-center">
+                                                <div class="form__group d-flex align-items-center">
                                                     <input type="text" name="coupon" id="coupon" class="form__input form__input--2" placeholder="Coupon Code">
                                                     <button type="submit" class="btn btn-medium btn-style-3">Apply Coupon</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-7 text-md-right">
+                                        <div class="col-6 text-md-right">
                                             <div class="cart-btn-group">
                                                 <a href="karóra-shop.html" class="btn btn-medium btn-style-3">Update Cart</a>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
+
                                 <!-- Cart Area End --> 
-                            </div>
+                            </div>                            
                         </div>
-                    </div>
-                    <div class="cart-page-total-wrapper">
+                    </div>                         
+                     <div class="cart-page-total-wrapper">
                         <div class="row justify-content-end">
                             <div class="col-xl-6 col-lg-8 col-md-10">
-                                <div class="cart-page-total bg--dark-3">
+                                <div class="cart-page-total">
                                     <h2>Cart Totals</h2>
                                     <div class="cart-calculator-table table-content table-responsive">
                                         <table class="table">
@@ -305,7 +304,7 @@
                                                                 <option value="AT">Austria</option>
                                                                 <option value="AZ">Azerbaijan</option>
                                                                 <option value="BH">Bahrain</option>
-                                                                <option value="BD" selected="selected">Bangladesh</option>
+                                                                <option value="BD" selected="selected">Jordan</option>
                                                                 <option value="BD">Brazil</option>
                                                                 <option value="CN">China</option>
                                                                 <option value="EG">Egypt</option>
@@ -360,17 +359,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>      
-            </div>
-        </div>
-
+                      </div>
         <!-- Main content wrapper end -->
-
-
-        <!-- Main Content Wrapper Start -->
-
-        <!-- Footer Start -->
+      
+<!-- Footer Start -->
         <footer class="footer border-top ptb--40 ">
             <div class="container">
                 <div class="row mb--40 ">
@@ -384,44 +376,44 @@
                                 <p>Email: Contact@plazathemes.com</p>
                             </div>
                             <ul class="social social-round mr-20">
-                            <li class="social__item">
+                              <li class="social__item">
                                 <a href="https://www.twitter.com" class="social__link" target="_blank">
                                 <i class="fab fa-twitter"></i>
                                 </a>
-                            </li>
-                            <li class="social__item">
+                              </li>
+                              <li class="social__item">
                                 <a href="https://www.google.com" class="social__link" target="_blank">
                                 <i class="fab fa-google"></i>
                                 </a>
-                            </li>
-                            <li class="social__item">
+                              </li>
+                              <li class="social__item">
                                 <a href="https://www.facebook.com" class="social__link" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                                 </a>
-                            </li>
-                            <li class="social__item">
+                              </li>
+                              <li class="social__item">
                                 <a href="https://www.youtube.com" class="social__link" target="_blank">
                                 <i class="fab fa-youtube"></i>
                                 </a>
-                            </li>
-                            <li class="social__item">
+                              </li>
+                              <li class="social__item">
                                 <a href="https://www.instagram.com" class="social__link" target="_blank">
                                 <i class="fab fa-instagram"></i>
                                 </a>
-                            </li>
-                        </ul>
+                              </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 ">
                         <div class="footer-widget">
                             <h3 class="widget-title">Information</h3>
                             <ul class="widget-menu">
-                                <li><a href="">About Us</a></li>
+                                <li><a href="karóra-about.html">About Us</a></li>
                                 <li><a href="">Delivery Information</a></li>
                                 <li><a href="">Privacy Policy</a></li>
                                 <li><a href="">Terms &amp; Conditions</a></li>
                                 <li><a href="">Gift Certificates</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="karóra-contactUs.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -457,7 +449,7 @@
                                             </span>
                                         </div>
                                         <h4 class="product-title">
-                                            <a href="product-details.html" tabindex="0">Acer Aspire E 15</a>
+                                            <a href="karóra-product.html" tabindex="0">Acer Aspire E 15</a>
                                         </h4>
                                         <div class="product-price-wrapper">
                                             <span class="money">$550.00</span>
@@ -482,7 +474,7 @@
                                             </span>
                                         </div>
                                         <h4 class="product-title">
-                                            <a href="product-details.html" tabindex="0">Acer Aspire E 15</a>
+                                            <a href="karóra-product.html" tabindex="0">Acer Aspire E 15</a>
                                         </h4>
                                         <div class="product-price-wrapper">
                                             <span class="money">$550.00</span>
@@ -499,32 +491,31 @@
                 <div class="row mb--40 ">
                     <div class="col-12">
                         <ul class="footer-menu">
-                            <li><a href="">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="">Online Store</a></li>
                             <li><a href="">Promotion</a></li>
                             <li><a href="">Privacy Policy</a></li>
                             <li><a href="">Terms Of Use</a></li>
                             <li><a href="">Sitemap</a></li>
                             <li><a href="">Support</a></li>
-                            <li><a href="">Contacts</a></li>
+                            <li><a href="karóra-contactUs.html">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="copyright-text">Copyright &copy; 2019 <a href="#">HasTech</a> .All Right Reserved.</p>
+                        <p class="copyright-text">Copyright &copy; 2019 <a href="">HasTech</a> .All Right Reserved.</p>
                         <img src="img/payment.png" alt="payment">
                     </div>
                 </div>
             </div>
 
-
-      <!-- Scroll To Top Start -->    
-        <a class="scroll-to-top" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- Scroll To Top Start -->    
+    <a class="scroll-to-top" href=""><i class="fa fa-angle-double-up"></i></a>
         <!-- Scroll To Top End -->
         </footer>
-        <!-- Footer End -->
-
+  <!-- Footer End -->
+</div>
 
 <!--jquery files & javascript -->
   <script type="text/javascript" src="js/jquery.js"></script>
