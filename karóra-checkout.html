@@ -109,19 +109,21 @@
                   </div>
               </div>
               <div class="col-lg-2 col-12 order-lg-2 text-center">
-                  <a href="karóra-index.html" class="logo-box">
+                  <a href="index.html" class="logo-box">
                       <img src="img/bebo.png" alt="logo">
                   </a>
               </div>
               <div class="col-lg-5 col-md-7 col-sm-6 order-lg-3 order-3">
-                  <div class="header-toolbar">
-                          <form action="#" class="search-form">
-                              <input type="text" name="search" id="search" class="search-form__input" placeholder="Search">
-                              <button type="submit" class="search-form__submit">
-                                <i class="fas fa-search"></i>
-                              </button>
-                          </form>
-                      <ul class="header-toolbar-icons">
+                 <div class="header-toolbar">
+                      <div class="search-form-wrapper search-hide">
+                        <form action="#" class="search-form">
+                            <input type="text" name="search" id="search" class="search-form__input" placeholder="Search entire store here..">
+                        </form>
+                      </div>
+                        <ul class="header-toolbar-icons">
+                                    <li class="search-box">
+                                        <a href="#" class="bordered-icon search-btn" aria-expanded="false"><i class="icon_search fas fa-search"></i></a>
+                                    </li>
                                     <li class="wishlist-icon">
                                         <a href="karóra-wishlist.html" class="bordered-icon"><i class="fa fa-heart"></i></a>
                                     </li>
@@ -149,7 +151,7 @@
     <div class="collapse navbar-collapse col-12 position-static text-center" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mainmenu">
       <li class="nav-item mainmenu__item">
-        <a class="nav-link mainmenu__link" href="karóra-index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link mainmenu__link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="mainmenu__item nav-item">
        <a href="karóra-shop.html" class="mainmenu__link nav-link">Shop</a></li>  
@@ -161,10 +163,10 @@
        <a href="" class="mainmenu__link nav-link">Pages</a></li> 
 
        <li class="mainmenu__item nav-item">
-       <a href="" class="mainmenu__link nav-link">About Us</a></li> 
+       <a href="karóra-about.html" class="mainmenu__link nav-link">About Us</a></li> 
 
        <li class="mainmenu__item nav-item">
-       <a href="" class="mainmenu__link nav-link">contact Us</a></li> 
+       <a href="karóra-contactUs.html" class="mainmenu__link nav-link">contact Us</a></li> 
     </ul>
   </div>
     </nav>
@@ -176,8 +178,6 @@
 <!-- all Header Area End -->
 <!-- all Header Area End -->
 
-
-
 <!-- Breadcumb area Start -->
         <div class="breadcrumb-area">
             <div class="container">
@@ -185,7 +185,7 @@
                     <div class="col-12 text-center">
                         <h1 class="page-title">Checkout</h1>
                         <ul class="breadcrumb justify-content-center">
-                            <li><a href="karóra-index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li class="current"><a href="karóra-checkout.html">Checkout</a></li>
                         </ul>
                     </div>
@@ -196,7 +196,7 @@
 
         <!-- Main content wrapper start -->
         <div class="main-content-wrapper">
-            <div class="checkout-area pt--40 pb--80 pt-md--30 pb-md--60">
+            <div class="checkout-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -237,7 +237,7 @@
                                             <div id="coupon_info" class="user-actions__form user-actions--coupon hide-in-default">
                                                 <form action="#" class="form">
                                                     <div class="form__group d-flex">
-                                                        <input type="text" name="coupon" id="coupon" class="form__input form__input--2 form__input--w285 mr--20" placeholder="Coupon Code">
+                                                        <input type="text" name="coupon" id="coupon" class="form__input form__input--2 form__input--w285" placeholder="Coupon Code">
                                                         <button type="submit" class="btn btn-medium btn-style-3">Apply Coupon</button>
                                                     </div>
                                                 </form>
@@ -260,7 +260,7 @@
                                         </div>
                                         <div class="checkout-form">
                                             <form action="#" class="form">
-                                                <div class="form-row mb--30">
+                                                <div class="form-row ">
                                                     <div class="form__group col-md-6 ">
                                                         <label for="billing_fname" class="form__label">First Name <span>*</span></label>
                                                         <input type="text" name="billing_fname" id="billing_fname" class="form__input form__input--2">
@@ -270,13 +270,13 @@
                                                         <input type="text" name="billing_lname" id="billing_lname" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row ">
                                                     <div class="form__group col-12">
                                                         <label for="billing_company" class="form__label">Company</label>
                                                         <input type="text" name="billing_company" id="billing_company" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row ">
                                                     <div class="form__group col-12">
                                                         <label for="billing_country" class="form__label">Country</label>
                                                         <select id="billing_country" name="billing_country" class="form__input form__input--2 nice-select">
@@ -290,7 +290,7 @@
                                                             <option value="AT">Austria</option>
                                                             <option value="AZ">Azerbaijan</option>
                                                             <option value="BH">Bahrain</option>
-                                                            <option value="BD" selected="selected">Bangladesh</option>
+                                                            <option value="BD" selected="selected">Jordan</option>
                                                             <option value="BD">Brazil</option>
                                                             <option value="CN">China</option>
                                                             <option value="EG">Egypt</option>
@@ -330,25 +330,25 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <label for="billing_streetAddress" class="form__label">Street Address</label>
                                                         <input type="text" name="billing_streetAddress" id="billing_streetAddress" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <label for="billing_apartment" class="form__label">Apartment, suite, unit etc. (optional)</label>
                                                         <input type="text" name="billing_apartment" id="billing_apartment" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row ">
                                                     <div class="form__group col-12">
                                                         <label for="billing_city" class="form__label">Town/City <span>*</span></label>
                                                         <input type="text" name="billing_city" id="billing_city" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <label for="billing_district" class="form__label">District <span>*</span></label>
                                                         <select name="billing_district" id="billing_district" class="form__input form__input--2 nice-select">
@@ -385,13 +385,13 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <label for="billing_zip" class="form__label">Post/Zip Code <span>*</span></label>
                                                         <input type="text" name="billing_zip" id="billing_zip" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-md-6 mb-sm--30">
                                                         <label for="billing_phone" class="form__label">Phone</label>
                                                         <input type="text" name="billing_phone" id="billing_phone" class="form__input form__input--2">
@@ -401,7 +401,7 @@
                                                         <input type="email" name="billing_email" id="billing_email" class="form__input form__input--2">
                                                     </div>
                                                 </div>
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <div class="custom-checkbox">
                                                             <input type="checkbox" name="createaccount" id="createaccount" class="form__checkbox">
@@ -415,7 +415,7 @@
                                                         </div>
                                                     </div>
                                                 </div> 
-                                                <div class="form-row mb--30">
+                                                <div class="form-row">
                                                     <div class="form__group col-12">
                                                         <div class="custom-checkbox">
                                                             <input type="checkbox" name="shipdifferetads" id="shipdifferetads" class="form__checkbox">
@@ -423,7 +423,7 @@
                                                             <label for="shipdifferetads" class="form__checkbox--label shipping-label">Ship To A Different Address?</label>
                                                         </div>
                                                         <div class="ship-box-info hide-in-default mt--30">
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-md-6 mb-sm--30">
                                                                     <label for="shipping_fname" class="form__label">First Name <span>*</span></label>
                                                                     <input type="text" name="shipping_fname" id="shipping_fname" class="form__input form__input--2">
@@ -433,13 +433,13 @@
                                                                     <input type="text" name="shipping_lname" id="shipping_lname" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_company" class="form__label">Company</label>
                                                                     <input type="text" name="shipping_company" id="shipping_company" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_country" class="form__label">Country</label>
                                                                     <select id="shipping_country" name="shipping_country" class="form__input form__input--2 nice-select">
@@ -493,25 +493,25 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_streetAddress" class="form__label">Street Address</label>
                                                                     <input type="text" name="shipping_streetAddress" id="shipping_streetAddress" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_apartment" class="form__label">Apartment, suite, unit etc. (optional)</label>
                                                                     <input type="text" name="shipping_apartment" id="shipping_apartment" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_city" class="form__label">Town/City <span>*</span></label>
                                                                     <input type="text" name="shipping_city" id="shipping_city" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_district" class="form__label">Districtg <span>*</span></label>
                                                                     <select id="shipping_district" name="shipping_district" class="form__input form__input--2 nice-select">
@@ -548,13 +548,13 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-12">
                                                                     <label for="shipping_zip" class="form__label">Post/Zip Code <span>*</span></label>
                                                                     <input type="text" name="shipping_zip" id="shipping_zip" class="form__input form__input--2">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row mb--30">
+                                                            <div class="form-row">
                                                                 <div class="form__group col-md-6 mb-sm--30">
                                                                     <label for="shipping_phone" class="form__label">Phone</label>
                                                                     <input type="text" name="shipping_phone" id="shipping_phone" class="form__input form__input--2">
@@ -579,7 +579,7 @@
                                     <div class="col-lg-6 mt-md--30">
                                         <div class="order-details">
                                             <h3 class="heading-tertiary">Your Order</h3>
-                                            <div class="order-table table-content table-responsive mb--30">
+                                            <div class="order-table table-content table-responsive">
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
@@ -589,11 +589,11 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>Aliquam lobortis est <strong>x1</strong></td>
+                                                            <td>Aliquam lobortis <strong> x1</strong></td>
                                                             <td>$80.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Auctor gravida enim <strong>x1</strong></td>
+                                                            <td>Auctor gravida <strong> x1</strong></td>
                                                             <td>$60.00</td>
                                                         </tr>
                                                     </tbody>
@@ -661,7 +661,7 @@
                                                         <div class="custom-checkbox">
                                                             <input type="checkbox" name="termscondition" id="termscondition" class="form__checkbox">
                                                             
-                                                            <label for="termscondition" class="terms-condition-label payment-label">I have read and agree to the website <a href="karóra-index.html">terms and conditions.</a></label>
+                                                            <label for="termscondition" class="terms-condition-label payment-label">I have read and agree to the website <a href="index.html">terms and conditions.</a></label>
                                                         </div>
                                                     </div>
                                                     <div class="payment-btn-group">
@@ -727,12 +727,12 @@
                         <div class="footer-widget">
                             <h3 class="widget-title">Information</h3>
                             <ul class="widget-menu">
-                                <li><a href="">About Us</a></li>
+                                <li><a href="karóra-about.html">About Us</a></li>
                                 <li><a href="">Delivery Information</a></li>
                                 <li><a href="">Privacy Policy</a></li>
                                 <li><a href="">Terms &amp; Conditions</a></li>
                                 <li><a href="">Gift Certificates</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="karóra-contactUs.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -768,7 +768,7 @@
                                             </span>
                                         </div>
                                         <h4 class="product-title">
-                                            <a href="" tabindex="0">Acer Aspire E 15</a>
+                                            <a href="karóra-product.html" tabindex="0">Acer Aspire E 15</a>
                                         </h4>
                                         <div class="product-price-wrapper">
                                             <span class="money">$550.00</span>
@@ -793,7 +793,7 @@
                                             </span>
                                         </div>
                                         <h4 class="product-title">
-                                            <a href="" tabindex="0">Acer Aspire E 15</a>
+                                            <a href="karóra-product.html" tabindex="0">Acer Aspire E 15</a>
                                         </h4>
                                         <div class="product-price-wrapper">
                                             <span class="money">$550.00</span>
@@ -810,14 +810,14 @@
                 <div class="row mb--40 ">
                     <div class="col-12">
                         <ul class="footer-menu">
-                            <li><a href="">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="">Online Store</a></li>
                             <li><a href="">Promotion</a></li>
                             <li><a href="">Privacy Policy</a></li>
                             <li><a href="">Terms Of Use</a></li>
                             <li><a href="">Sitemap</a></li>
                             <li><a href="">Support</a></li>
-                            <li><a href="">Contacts</a></li>
+                            <li><a href="karóra-contactUs.html">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
